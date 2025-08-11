@@ -13,7 +13,7 @@ from collections import Counter
 ######################################################################################
 ## Set up data ##
 
-CNV = mne.io.read_raw_bdf('P16/P16_CNV.bdf', preload=True)
+CNV = mne.io.read_raw_bdf('P_n/P_n_CNV.bdf', preload=True)
 
 Ch_to_pick = ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9', 'A10',
                  'A11', 'A12', 'A13', 'A14', 'A15', 'A16', 'A17', 'A18', 'A19',
@@ -177,5 +177,6 @@ mne.viz.plot_compare_evokeds(CNV_dict, picks = 'Cz')
 
 # Epochs can be save to file for later import and manupulation using the following line: 
 
-#One_epochs.save('Epochs/CNV/P16_CNV_One-epo.fif', overwrite=True)
-#Two_epochs.save('Epochs/CNV/P16_CNV_Two-epo.fif', overwrite=True)
+#One_epochs.save('Epochs/CNV/P_n_CNV_One-epo.fif', overwrite=True)
+
+#Two_epochs.save('Epochs/CNV/P_n_CNV_Two-epo.fif', overwrite=True)
